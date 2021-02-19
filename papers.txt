@@ -1,0 +1,28 @@
+Innovation in financial education: ULe-Bank
+Razvan Raducu, Camino Fernández, Miguel Ángel Conde, Alexis Gutiérrez, María Teresa Tascón & Francisco Javier Castaño
+https://doi.org/10.1145/3144826.3145432
+
+Analyzing Students’ WhatsApp Messages to Evaluate the Individual Acquisition of Teamwork Competence
+Miguel Á. Conde, Francisco J. Rodríguez-Sedano, Francisco J. Rodríguez Lera, Alexis Gutiérrez-Fernández & Ángel M. Guerrero-Higueras
+https://doi.org/10.1007/978-3-030-21817-1_3
+
+Academic Success Assessment through Version Control Systems
+Ángel Manuel Guerrero Higueras, Camino Fernández Llamas, Lidia Sánchez González,
+Alexis Gutiérrez Fernández, Gonzalo Esteban Costales & Miguel Ángel Conde
+González
+https://doi.org/10.3390/app10041492
+
+Assessing the individual acquisition of teamwork competence by exploring students’ instant messaging tools use: the WhatsApp case study
+Miguel Á. COnde, Francisco J. Rodríguez-Sedano, Francisco J. Rodríguez-Lera,
+Alexis Gutiérrez-Fernández & Ángel M. Guerrero-Higueras
+https://doi.org/10.1007/978-3-030-21817-1_3
+
+Evaluación del resultado académico de los estudiantes a partir del análisis del uso de los Sistemas de Control de Versiones
+Alexis Gutiérrez-Fernández, Ángel Manuel Guerrero Higueras, Miguel Ángel Conde
+González & Camino Fernández Llamas
+https://doi.org/10.5944/ried.23.2.26539
+
+Automatic Extraction of Power Cables Location in Railways Using Surface LiDAR Systems
+Alexis Gutiérrez-Fernández, Camino Fernández-Llamas, Vicente Matellán-Olivera &
+Adrián Suárez-González
+https://doi.org/10.3390/s20216222
