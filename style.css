@@ -206,3 +206,11 @@ h1.namefont {
   margin-top: 3px;
   margin-bottom: 3px;
 }
+
+.publications a {
+  color: black;
+}
+
+.publications a:link {
+  text-decoration: none;
+}
