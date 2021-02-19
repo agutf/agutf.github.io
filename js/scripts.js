@@ -14,11 +14,21 @@ function getPapers(){
                 var publication;
 
                 var i;
-                for (i = 0; i < publications.length; i++) {
+                for (i = publications.length - 1; i >=0; i--) {
                     publication = publications[i].split('\n');
-                    var h3 = document.createElement("H3");
-                    h3.innerHTML = publication[0];
-                    publicationsSpace.append(h3);
+
+                    var publicationTitle = document.createElement("H3");
+                    var publicationAuthors = document.createElement("H4");
+                    var publicationDOI = document.createElement("a");
+                    
+                    publicationTitle.innerHTML = publication[0];
+                    publicationAuthors.innerHTML = publication[1];
+                    publicationDOI.setAttribute("href", publication[2]);
+                    publicationDOI.innerHTML = publication[2];
+
+                    publicationsSpace.append(publicationTitle);
+                    publicationsSpace.append(publicationAuthors);
+                    publicationsSpace.append(publicationDOI);
                 }
             }
         }
