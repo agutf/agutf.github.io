@@ -195,3 +195,14 @@ h1.namefont {
 {
   transform: none;
 }
+
+.publications h3 {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.publications h4 {
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
