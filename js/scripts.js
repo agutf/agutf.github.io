@@ -21,9 +21,14 @@ function getPapers(){
                     var publicationAuthors = document.createElement("H4");
                     var publicationDOI = document.createElement("a");
                     
-                    publicationTitle.innerHTML = publication[0];
+                    publicationTitle.innerHTML = "&#8594; " + publication[0];
                     publicationAuthors.innerHTML = publication[1];
-                    publicationDOI.setAttribute("href", publication[2]);
+                    if(publication.length == 4) {
+                        publicationDOI.setAttribute("href", publication[3]);
+                    }
+                    else {
+                        publicationDOI.setAttribute("href", publication[2]);
+                    }
                     publicationDOI.innerHTML = publication[2];
 
                     publicationsSpace.append(publicationTitle);

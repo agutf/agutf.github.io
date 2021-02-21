@@ -4,6 +4,8 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link
         href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
@@ -14,7 +16,7 @@
         
         <link rel="stylesheet" href="style.css">
 
-        <script src="js/scripts.js?random=<?php echo uniqid(); ?>"></script>
+        <script src="js/scripts.js"></script>
     </head>
 
     <body>
@@ -42,11 +44,10 @@
                 but hey, it's pure CSS magic.
                 -->
                 <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#location"><li>Contact & location</li></a>
+                    <a href="#socials"><li>Socials</li></a>
+                    <a href="#publications-sec"><li>Publications</li></a>
                 </ul>
             </div>
         </nav>
@@ -55,14 +56,14 @@
 
             <h1 class="namefont centered">Alexis Gutiérrez</h1>
 
-            <div class="location">
+            <div id="location" class="location">
                 <p>Robotics Group</p>
                 <p>Módulo de Investigación Cibernética</p>
                 <p>Universidad de León</p>
                 <p>Campus de Vegazana, s/n, 24071, León</p>
             </div>
 
-            <div class="socials">
+            <div id="socials" class="socials">
                 <div class="socials-element">
                     <img src="images/icons/email.png">
                     <p><a href="mailto:alexis.gutierrez@unileon.es">alexis.gutierrez@unileon.es</a></p>
@@ -83,6 +84,8 @@
                     <p><a href="https://twitter.com/agutf_">@agutf_</a></p>
                 </div>
             </div>
+
+            <h2 id="publications-sec" class="namefont centered">Publications</h2>
 
             <div id="publications" class="publications">
 

@@ -11,7 +11,7 @@ Academic Success Assessment through Version Control Systems
 https://doi.org/10.3390/app10041492
 
 Assessing the individual acquisition of teamwork competence by exploring students’ instant messaging tools use: the WhatsApp case study
-Miguel Á. COnde, Francisco J. Rodríguez-Sedano, Francisco J. Rodríguez-Lera, Alexis Gutiérrez-Fernández & Ángel M. Guerrero-Higueras
+Miguel Á. Conde, Francisco J. Rodríguez-Sedano, Francisco J. Rodríguez-Lera, Alexis Gutiérrez-Fernández & Ángel M. Guerrero-Higueras
 https://doi.org/10.1007/978-3-030-21817-1_3
 
 Evaluación del resultado académico de los estudiantes a partir del análisis del uso de los Sistemas de Control de Versiones
@@ -21,3 +21,8 @@ https://doi.org/10.5944/ried.23.2.26539
 Automatic Extraction of Power Cables Location in Railways Using Surface LiDAR Systems
 Alexis Gutiérrez-Fernández, Camino Fernández-Llamas, Vicente Matellán-Olivera & Adrián Suárez-González
 https://doi.org/10.3390/s20216222
+
+Sistema y método de interacción en entornos virtuales utilizando dispositivos hápticos
+Alexis Gutiérrez Fernández, Camino Fernández Llamas & Gonzalo Esteban Costales
+Patente Nacional ES2716012A1
+http://www.oepm.es/pdf/ES/0000/000/02/71/60/ES-2716012_A1.pdf
