@@ -5,9 +5,9 @@ body {
 }
 
 .container {
-    width: 1280px;
+    width: 1000px;
     margin: auto;
-    width: 50%;
+    margin-bottom: 100px;
 }
 
 .centered {
@@ -31,6 +31,10 @@ h1.namefont {
 .location p {
     text-align: center;
     margin: 0;
+}
+
+#location h3 {
+  margin-bottom: 10px;
 }
 
 .socials-element {
@@ -221,4 +225,26 @@ h1.namefont {
 
 .publications a:visited {
   text-decoration: none;
+}
+
+.centered a {
+  color: black;
+}
+
+.centered a:link {
+  text-decoration: none;
+}
+
+.centered a:hover {
+  text-decoration: underline;
+}
+
+.centered a:visited {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 50px;
+  text-align: justify;
+  text-justify: inter-word;
 }
