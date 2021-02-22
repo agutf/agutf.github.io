@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -200,30 +204,30 @@ h1.namefont {
   transform: none;
 }
 
-.publications h3 {
+#publications h3 {
   margin: 0;
   margin-top: 20px;
 }
 
-.publications h4 {
+#publications h4 {
   margin: 0;
   margin-top: 3px;
   margin-bottom: 3px;
 }
 
-.publications a {
+#publications a {
   color: black;
 }
 
-.publications a:link {
+#publications a:link {
   text-decoration: none;
 }
 
-.publications a:hover {
+#publications a:hover {
   text-decoration: underline;
 }
 
-.publications a:visited {
+#publications a:visited {
   text-decoration: none;
 }
 
