@@ -82,12 +82,13 @@ h1.namefont {
     height: 32px;
 }
 
-#publications h3 {
+#publications h4 {
   margin: 0;
   margin-top: 20px;
+  font-size: 13pt;
 }
 
-#publications h4 {
+#publications p {
   margin: 0;
   margin-top: 3px;
   margin-bottom: 3px;

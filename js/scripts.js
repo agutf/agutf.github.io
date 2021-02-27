@@ -17,8 +17,8 @@ function getPapers(){
                 for (i = publications.length - 1; i >=0; i--) {
                     publication = publications[i].split('\n');
 
-                    var publicationTitle = document.createElement("H3");
-                    var publicationAuthors = document.createElement("H4");
+                    var publicationTitle = document.createElement("H4");
+                    var publicationAuthors = document.createElement("p");
                     var publicationDOI = document.createElement("a");
                     
                     publicationTitle.innerHTML = "&#8594; " + publication[0];
