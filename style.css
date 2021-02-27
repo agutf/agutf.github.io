@@ -5,21 +5,56 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata';
+  font-family: monospace;
+  font-size: 12pt;
+}
+
+.header {
+	font-family: monospace;
+	margin-top: 50px;
+  font-size: 32pt;
+}
+
+.header:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .container {
-    width: 1000px;
+    width: 100%;
     margin: auto;
     margin-bottom: 100px;
 }
 
-.centered {
-    text-align: center;
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+}
 }
 
-.namefont {
-    font-family: 'Major Mono Display';
+.centered {
+    text-align: center;
 }
 
 h1.namefont {
@@ -42,166 +77,9 @@ h1.namefont {
 }
 
 .socials-element {
+  text-align: center;
     margin-top: 10px;
     height: 32px;
-}
-
-.socials-element img, .socials-element p {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.socials p a {
-    color: black;
-}
-
-.socials p a:link {
-    text-decoration: none;
-}
-
-#menuToggle
-{
-  display: block;
-  position: fixed;
-  top: 62px;
-  left: 50px;
-  height: 100%;
-
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: white;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: rgb(167, 167, 167);
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #212121;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  height: 100%;
-  
-  background: #212121;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
 }
 
 #publications h3 {
@@ -215,35 +93,19 @@ h1.namefont {
   margin-bottom: 3px;
 }
 
-#publications a {
+a {
   color: black;
 }
 
-#publications a:link {
+a:link {
   text-decoration: none;
 }
 
-#publications a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-#publications a:visited {
-  text-decoration: none;
-}
-
-.centered a {
-  color: black;
-}
-
-.centered a:link {
-  text-decoration: none;
-}
-
-.centered a:hover {
-  text-decoration: underline;
-}
-
-.centered a:visited {
+a:visited {
   text-decoration: none;
 }
 
@@ -251,4 +113,12 @@ h1.namefont {
   padding-top: 50px;
   text-align: justify;
   text-justify: inter-word;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+iframe {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
 }
