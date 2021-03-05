@@ -9,9 +9,23 @@ body {
 }
 
 .container {
-    width: 1000px;
-    margin: auto;
-    margin-bottom: 100px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: block;
+  position: fixed;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 992x;
+    padding: 0;
+  }
 }
 
 .centered {
