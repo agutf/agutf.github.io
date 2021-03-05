@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: monospace;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 
 .header {
@@ -103,7 +103,7 @@ h1.namefont {
 #publications h4 {
   margin: 0;
   margin-top: 20px;
-  font-size: 13pt;
+  font-size: 12pt;
 }
 
 #publications p {
