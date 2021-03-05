@@ -20,20 +20,17 @@ function getPapers(){
                     var publicationTitle = document.createElement("H4");
                     var publicationAuthors = document.createElement("p");
                     var publicationDOI = document.createElement("a");
+
+                    publicationDOI.setAttribute("href", publication[2]);
+                    publicationDOI.setAttribute("target", "_blank")
+
+                    publicationDOI.innerHTML = "&#8594; " + publication[0];
                     
-                    publicationTitle.innerHTML = "&#8594; " + publication[0];
+                    publicationTitle.append(publicationDOI);
                     publicationAuthors.innerHTML = publication[1];
-                    if(publication.length == 4) {
-                        publicationDOI.setAttribute("href", publication[3]);
-                    }
-                    else {
-                        publicationDOI.setAttribute("href", publication[2]);
-                    }
-                    publicationDOI.innerHTML = publication[2];
 
                     publicationsSpace.append(publicationTitle);
                     publicationsSpace.append(publicationAuthors);
-                    publicationsSpace.append(publicationDOI);
                 }
             }
         }
