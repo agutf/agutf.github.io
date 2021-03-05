@@ -16,7 +16,19 @@ body {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 576px) {
+  .header {
+    font-size: 22pt;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 26pt;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .header {
     font-size: 30pt;
   }
@@ -48,15 +60,13 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
   margin: auto;
   margin-bottom: 100px;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 992px) {
   .container {
-    width: 960px;
+    width: 992px;
     margin: auto;
     margin-bottom: 100px;
   }
