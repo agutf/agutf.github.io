@@ -112,6 +112,18 @@ h1.namefont {
   margin-bottom: 3px;
 }
 
+#talks h4 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 12pt;
+}
+
+#talks p {
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 a {
   color: black;
 }
