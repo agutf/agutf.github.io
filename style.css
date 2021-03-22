@@ -10,12 +10,71 @@ body {
 }
 
 .header {
-	font-family: monospace;
-	margin-top: 50px;
-  font-size: 18pt;
-  margin-bottom: 0;
+  text-align: center;
+  margin-top: 50px;
 }
 
+/* font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden; 
+	margin-top: 50px;
+  margin-bottom: 0;*/
+
+.header-flex {
+  display: flex;
+}
+
+.header-left {
+  display: inline-block;
+  text-align: left;
+}
+
+.prompt {
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.typewrite {
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 100%;
+  /* Ensures the content is not revealed until the animation 
+  border-right: .15em solid black;*/
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 3s steps(21, end), blink-caret .75s step-end infinite;
+}
+
+.cursor {
+  float: left;
+  font-size: 2em;
+  font-weight: bold;
+  animation: cursor 0.5s infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+/*
 @media only screen and (min-width: 576px) {
   .header {
     font-size: 22pt;
@@ -33,12 +92,15 @@ body {
     font-size: 30pt;
   }
 }
+*/
 
+/*
 .header:after {
 	content:"_";
 	opacity: 0;
 	animation: cursor 1s infinite;
 }
+*/
 
 @keyframes cursor {
 	0% {
