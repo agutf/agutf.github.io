@@ -38,24 +38,25 @@ body {
 .typewrite {
   font-family: monospace;
   overflow: hidden;
-  border-right: 2px solid black;
-  width: 100%;
+  /*width: 100%;*/
   /* Ensures the content is not revealed until the animation 
   border-right: .15em solid black;*/
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0;
-  margin-right: auto;
   /* Gives that scrolling effect as the typing happens */
-  animation: typing 20s steps(21, end) infinite, blink-caret .75s step-end infinite;
+  animation: typing 20s steps(22, end) infinite;
 }
 
 .cursor {
-  float: left;
-  font-size: 2em;
-  font-weight: bold;
-  animation: cursor 0.5s infinite;
+  border: 20px solid transparent;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-image: url('img/cursor.png');
+  border-image-slice: 30;
+  animation: cursor 1s step-end infinite;
 }
 
 /* The typing effect */
@@ -67,9 +68,10 @@ body {
   95%, 100% { width: 0.01% }
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black }
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
 }
 
 /*
